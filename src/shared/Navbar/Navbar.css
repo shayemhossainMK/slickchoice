@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Bebas+Neue&family=Dancing+Script&display=swap");
+
+/* font-family: 'Alkalami', serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Dancing Script', cursive; */
+
+.custom-font-one {
+  font-family: "Dancing Script", cursive;
+}
+.custom-font-two {
+  font-family: "Bebas Neue", cursive;
+}
+.custom-font-three {
+  font-family: "Alkalami", serif;
+}

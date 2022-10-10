@@ -1,10 +1,15 @@
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import logo from "../../asset/Slick-Choice-Logo.png";
+import SubNavbar from "./SubNavbar";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <div>
-      <div class="navbar bg-base-100 md:px-28 shadow-lg md:py-5">
+      <SubNavbar></SubNavbar>
+      <div class="navbar bg-base-100 md:px-20 shadow-md md:py-5 custom-font-three">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -57,11 +62,11 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-xl">
+          <a class=" text-xl">
             <img src={logo} alt="" />
           </a>
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center -ml-80 hidden lg:flex">
           <ul class="menu menu-horizontal p-0">
             <li>
               <a>Home</a>
@@ -72,16 +77,46 @@ const Navbar = () => {
             <li>
               <a>Cashback</a>
             </li>
-            <li>
-              <a>Popular Stores</a>
-            </li>
-            <li>
-              <a>Popular Products</a>
+            <li tabIndex={0}>
+              <a>
+                More
+                <svg
+                  className="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </a>
+              <ul className="p-2 bg-white shadow-md">
+                <li>
+                  <a>Products</a>
+                </li>
+                <li>
+                  <a>Popular Brands</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Sign Up</a>
+        <div class="navbar-end gap-5">
+          <a class="btn btn-primary btn-outline rounded-none px-5 ">Sign In</a>
+          <a class="btn btn-primary rounded-none px-5 text-neutral">Sign Up</a>
+          <div className="flex gap-1 items-center">
+            <input
+              type="text"
+              placeholder="Search "
+              className="input  input-bordered w-[270px] rounded-none"
+            />
+            <p className="btn btn-primary rounded-none ">
+              <FontAwesomeIcon
+                className="text-neutral text-xl"
+                icon={faMagnifyingGlass}
+              ></FontAwesomeIcon>
+            </p>
+          </div>
         </div>
       </div>
     </div>
