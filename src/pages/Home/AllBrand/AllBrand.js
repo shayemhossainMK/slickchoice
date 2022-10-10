@@ -10,12 +10,12 @@ const AllBrand = () => {
   }, []);
   return (
     <div className="pb-16">
-      <div className="my-5 mb-10">
-        <h2 className="text-3xl font-semibold custom-font-three">
+      <div className="my-5 md:mb-10 px-5">
+        <h2 className=" text-xl md:text-3xl font-semibold custom-font-three">
           Popular Brands
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-x-7 gap-y-12">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-x-7 gap-y-12 px-3 md:px-0">
         {brands.map((brand) => (
           <AllBrandRow key={brand.id} brand={brand}></AllBrandRow>
         ))}

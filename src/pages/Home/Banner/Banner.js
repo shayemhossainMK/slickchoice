@@ -14,7 +14,7 @@ const Banner = () => {
     cssEase: "linear",
   };
   return (
-    <div className="my-5 md:mb-16">
+    <div className="my-5 md:mb-16 px-6 md:px-0">
       <Slider {...settings}>
         <div>
           <img src={banner1} alt="" />

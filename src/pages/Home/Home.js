@@ -4,9 +4,11 @@ import Banner from "./Banner/Banner";
 
 const Home = () => {
   return (
-    <div className="md:py-5 md:px-20">
-      <Banner></Banner>
-      <AllBrand></AllBrand>
+    <div className="md:max-w-[1480px] mx-auto">
+      <div className="md:py-5 md:px-20">
+        <Banner></Banner>
+        <AllBrand></AllBrand>
+      </div>
     </div>
   );
 };

@@ -9,11 +9,7 @@ const Footer = () => {
           <div className="h-14 w-28 bg-white flex justify-center items-center">
             <img src={logo} alt="" />
           </div>
-          <p className="font-bold">
-            SlickChoice.net
-            <br />
-            Providing reliable tech since 2018
-          </p>
+          <p className="font-bold">SlickChoice.net</p>
           <p>Copyright © 2022 - All right reserved</p>
         </div>
         <div>
