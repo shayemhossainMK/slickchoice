@@ -1,4 +1,10 @@
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faHome,
+  faMagnifyingGlass,
+  faSackDollar,
+  faStore,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import logo from "../../asset/Slick-Choice-Logo.png";
@@ -69,28 +75,38 @@ const Navbar = () => {
         <div class="navbar-center -ml-80 hidden lg:flex">
           <ul class="menu menu-horizontal p-0">
             <li>
-              <a>Home</a>
+              <div className="flex  items-center gap-1">
+                <FontAwesomeIcon
+                  className="text-primary"
+                  icon={faHome}
+                ></FontAwesomeIcon>
+                <a>Home</a>
+              </div>
             </li>
             <li>
-              <a>Store</a>
+              <div className="flex  items-center gap-1">
+                <FontAwesomeIcon
+                  className="text-primary"
+                  icon={faStore}
+                ></FontAwesomeIcon>
+                <a>Store</a>
+              </div>
             </li>
             <li>
-              <a>Cashback</a>
+              <div className="flex  items-center gap-2">
+                <FontAwesomeIcon
+                  className="text-primary"
+                  icon={faSackDollar}
+                ></FontAwesomeIcon>
+                <a>Cashback</a>
+              </div>
             </li>
             <li tabIndex={0}>
-              <a>
-                More
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
-              <ul className="p-2 bg-white shadow-md">
+              <div className="flex items-center gap-2">
+                <a>More</a>
+                <FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon>
+              </div>
+              <ul className="p-2 bg-white shadow-md z-20">
                 <li>
                   <a>Products</a>
                 </li>
