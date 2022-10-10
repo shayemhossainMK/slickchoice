@@ -108,7 +108,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search "
-              className="input  input-bordered w-[270px] rounded-none"
+              className="input  input-bordered focus:outline-none w-[270px] rounded-none"
             />
             <p className="btn btn-primary rounded-none ">
               <FontAwesomeIcon
