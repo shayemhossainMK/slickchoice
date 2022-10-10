@@ -10,7 +10,7 @@ const AllBrand = () => {
   }, []);
   return (
     <div className="pb-16">
-      <div className="my-5 md:mb-10 px-5">
+      <div className="my-5 md:mb-10 px-5 md:px-0">
         <h2 className=" text-xl md:text-3xl font-semibold custom-font-three">
           Popular Brands
         </h2>
