@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div>
       <SubNavbar></SubNavbar>
-      <div class="navbar bg-base-100 md:px-20 shadow-md md:py-5 custom-font-three">
+      <div class="navbar bg-base-100 md:px-20 shadow-md md:py-5">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -101,21 +101,23 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div class="navbar-end gap-5">
-          <a class="btn btn-primary btn-outline rounded-none px-5 ">Sign In</a>
+        <div class="navbar-end gap-2 md:gap-5">
+          <a class="btn btn-primary btn-outline rounded-none px-5">Sign In</a>
           <a class="btn btn-primary rounded-none px-5 text-neutral">Sign Up</a>
-          <div className="flex gap-1 items-center">
-            <input
-              type="text"
-              placeholder="Search "
-              className="input  input-bordered focus:outline-none w-[270px] rounded-none"
-            />
-            <p className="btn btn-primary rounded-none ">
-              <FontAwesomeIcon
-                className="text-neutral text-xl"
-                icon={faMagnifyingGlass}
-              ></FontAwesomeIcon>
-            </p>
+          <div className="hidden md:block">
+            <div className="flex gap-1 items-center ">
+              <input
+                type="text"
+                placeholder="Search "
+                className="input  input-bordered focus:outline-none md:w-[270px] rounded-none"
+              />
+              <p className="btn btn-primary rounded-none ">
+                <FontAwesomeIcon
+                  className="text-neutral text-xl"
+                  icon={faMagnifyingGlass}
+                ></FontAwesomeIcon>
+              </p>
+            </div>
           </div>
         </div>
       </div>
