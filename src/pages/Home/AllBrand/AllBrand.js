@@ -9,8 +9,8 @@ const AllBrand = () => {
       .then((data) => setBrands(data));
   }, []);
   return (
-    <div className="">
-      <div className="my-5">
+    <div className="pb-16">
+      <div className="my-5 mb-10">
         <h2 className="text-3xl font-semibold custom-font-three">
           Popular Brands
         </h2>
