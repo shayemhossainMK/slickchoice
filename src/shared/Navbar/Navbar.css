@@ -13,3 +13,6 @@ font-family: 'Dancing Script', cursive; */
 .custom-font-three {
   font-family: "Alkalami", serif;
 }
+.custom-shadow {
+  box-shadow: 2px 2px 1px #29296e;
+}
