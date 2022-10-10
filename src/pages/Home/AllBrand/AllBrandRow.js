@@ -10,8 +10,11 @@ const AllBrandRow = ({ brand }) => {
         <img className="w-40" src={img} alt="" />
       </div>
       <p className="mt-2 ml-1 text-primary custom-font-three">
-        <FontAwesomeIcon icon={faPlusCircle}></FontAwesomeIcon> Up to{" "}
-        {cashbackAmount}% Cashback
+        <FontAwesomeIcon
+          className="text-sm"
+          icon={faPlusCircle}
+        ></FontAwesomeIcon>{" "}
+        Up to {cashbackAmount}% Cashback
       </p>
     </div>
   );

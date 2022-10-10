@@ -101,7 +101,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div class="navbar-end gap-2 md:gap-5">
+        <div class="navbar-end gap-2 md:gap-3">
           <a class="btn btn-primary btn-outline rounded-none px-5">Sign In</a>
           <a class="btn btn-primary rounded-none px-5 text-neutral">Sign Up</a>
           <div className="hidden md:block">
