@@ -5,8 +5,8 @@ import "./Navbar.css";
 
 const SubNavbar = () => {
   return (
-    <div className="bg-primary text-center">
-      <p className="py-2 md:py-3 text-gray-100 text-xs md:text-md">
+    <div className="bg-primary text-center sticky top-0 z-50">
+      <p className="py-2 md:py-3 text-gray-100 text-xs md:text-lg">
         <FontAwesomeIcon
           className="text-neutral mr-2"
           icon={faRocket}

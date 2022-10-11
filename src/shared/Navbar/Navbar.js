@@ -10,6 +10,7 @@ import React from "react";
 import logo from "../../asset/Slick-Choice-Logo.png";
 import SubNavbar from "./SubNavbar";
 import "./Navbar.css";
+import Home from "../../pages/Home/Home";
 
 const Navbar = () => {
   return (
@@ -137,6 +138,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <Home></Home>
     </div>
   );
 };
